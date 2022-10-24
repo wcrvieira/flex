@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox / CSS Grid</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">    
 </head>
 <body>    
     <header class="header">
@@ -22,20 +22,20 @@
 
     <section class="form">
         <h2>Formulário de contato</h2>
-        <form action="#" class="form-contact" method="POST" tabindex="1">
-            <input type="text" class="form-contact-input" name="nome"
+        <form action="recebe.html" class="form-contact" method="POST" tabindex="1">
+            <input type="text" class="form-contact-input" name="nome" id="nome"
                 placeholder="Nome" required />
 
-            <input type="email" class="form-contact-input" name="email"
+            <input type="email" class="form-contact-input" name="email" id="email"
                 placeholder="E-mail" required />
 
-            <input type="tel" class="form-contact-input" name="tel"
+            <input type="tel" class="form-contact-input" name="telefone" id="telefone"
                 placeholder="Telefone" required />
 
-            <input type="date" class="form-contact-input" name="date"
+            <input type="date" class="form-contact-input" name="data_nasc" id="data_nasc"
                 placeholder="Data de nascimento" required />
 
-            <textarea class="form-contact-input" name="conteudo"
+            <textarea class="form-contact-input" name="mensagem" id="mensagem"
                 placeholder="Deixe uma mensagem" required></textarea>
 
             <button type="submit" class="form-contact-button">Enviar</button>
