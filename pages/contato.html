@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Wagner Cesar Vieira</title>
-    <link rel="stylesheet" href="../css/style.css">    
+    <link rel="stylesheet" href="../css/style.css">   
+    <script src="../js/valida.js"></script>
 </head>
 <body>    
     <header class="header">
-        <a href="/">Logo</a>
+        <a href="#"><img src="../images/favicon.png" alt=""></a>
         <nav>
             <ul class="menu">
-                <li><a href="../pages/about.html">Sobre</a></li>
+                <li><a href="../pages/sobre.html">Sobre</a></li>
                 <li><a href="../pages/experiencia.html">Experiência</a></li>
                 <li><a href="../pages/portfolio.html">Portfolio</a></li>
                 <li><a href="#">Contato</a></li>
@@ -22,22 +23,23 @@
 
     <h2>Formulário de contato</h2>
     <section class="form-flex">   
-        <article>     
-            <form action="#" class="form-contact" method="POST" tabindex="1">
+        <article>  
+            <form name="form" method="POST" action="#" class="form-contact" 
+                tabindex=-1 onsubmit="return valida()">             
                 <input type="text" class="form-contact-input" name="nome" id="nome"
-                    placeholder="Nome" required />
+                    placeholder="Nome" />
 
                 <input type="email" class="form-contact-input" name="email" id="email"
-                    placeholder="E-mail" required />
+                    placeholder="E-mail" />
 
                 <input type="tel" class="form-contact-input" name="telefone" id="telefone"
-                    placeholder="Telefone" required />
+                    placeholder="Telefone" />
 
                 <input type="date" class="form-contact-input" name="data_nasc" id="data_nasc"
-                    placeholder="Data de nascimento" required />
+                    placeholder="Data de nascimento" />
 
                 <textarea class="form-contact-input" name="mensagem" id="mensagem"
-                    placeholder="Deixe uma mensagem" required></textarea>
+                    placeholder="Deixe uma mensagem" ></textarea>
 
                 <button type="submit" class="form-contact-button">Enviar</button>
             </form>
