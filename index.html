@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Wagner Cesar Vieira</title>
+    <script src="http://code.jquery.com/jquery-3.6.1.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightbox.css">    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="./js/lightbox.js"></script>
+    
 </head>
 <body>
     
@@ -28,18 +33,22 @@
             
                 <p>Olá, meu nome é <strong>Wagner Cesar Vieira</strong></p>
                 <p>Sou Tecnólogo em Processamentos de Dados pela <strong>Fatec Taquaritinga</strong></p>
-                    <a href="https://www.fatectq.edu.br/" target="_blank">
-                        <img src="images/fatec_taquaritinga.jpg" width="400" height="240"></a>
-                    <a href="https://www.fatectq.edu.br/" target="_blank">
-                        <img src="images/fatec_taquaritinga.png" width="400" height="240"></a>
+                    <a href="https://www.fatectq.edu.br/" data-lightbox="roadtrip" target="_blank">
+                        <img src="images/fatec_taquaritinga.jpg" rel="lightbox[roadtrip]"
+                            alt="Vista área da Fatec Taquaritinga" width="400" height="240"></a>
+                    <a href="https://www.fatectq.edu.br/" data-lightbox="roadtrip" target="_blank">
+                        <img src="images/fatec_taquaritinga.png" rel="lightbox[roadtrip]"
+                            alt="Foto do prédio central da Fatec" width="400" height="240"></a>
         </article>
         
         <article class="flex">
             <p>Especialista em docência para a educação profissional e tecnológica pelo <strong>Instituto Federal de São Paulo - campus Barretos</strong></p>            
-                <a href="https://brt.ifsp.edu.br/" target="_blank">
-                    <img src="images/ifsp_barretos.png" width="400" height="240"></a>
-                <a href="https://brt.ifsp.edu.br/" target="_blank">
-                    <img src="images/ifsp_barretos.jpg" width="400" height="240"></a>
+                <a href="https://brt.ifsp.edu.br/" data-lightbox="roadtrip" target="_blank">
+                    <img src="images/ifsp_barretos.png" rel="lightbox[roadtrip]"
+                        alt="Vista área do Instituto Federal" width="400" height="240"></a>
+                <a href="https://brt.ifsp.edu.br/" data-lightbox="roadtrip" target="_blank">
+                    <img src="images/ifsp_barretos.jpg" rel="lightbox[roadtrip]"
+                        alt="Foto do portão principal do IF" width="400" height="240"></a>
         </article>
     </section>
 
